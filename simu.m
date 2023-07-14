@@ -3,6 +3,7 @@
 
 clear all;
 addpath('./utilities/');
+addpath('/SIVC_2016_code/')
 
 %% Set Parameters
 nv = 200;
@@ -177,13 +178,14 @@ for nn = 1:nsimu
     all_PR(:,:,nn) = PR;
 end
 resname = sprintf('residuals_n%d_s%d_nsimu%d_g%d_ul%d.mat', n,nv,nsimu,index_g,ul)
-save(resname, 'all_R', 'all_U', 'all_Projx', 'all_PR');
+save(resname, 'all_R', 'all_U', 'all_Projx', 'all_PR', 'q');
 
 
 % (ii) factor analysis to obtain q_est 
 % use R package for factor analysis to determine which method to use
 % then obtian q_est by the chosen method
 q_est = 1;
+
 
 % (iii) correlation between U_{1:q} & Z
 pval_Z = zeros(q_est,q_est,nsimu);
