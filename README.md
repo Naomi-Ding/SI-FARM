@@ -58,7 +58,7 @@ simu_main(100, 3, 200, 100, 3, 1);
 
 ## [factor_analysis.R](factor_analysis.R)
 > **the script for factor analysis to determine which method to use, then obtian q_est by the chosen method.**
-> ### (1) Settings
+### (1) Settings
 > **For different simulation settings, please modify the corresponding parameters.**
 - n: sample size, choose from [100,200]
 - p: number of covariates, p = 3
