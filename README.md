@@ -49,6 +49,7 @@ tiative study.
 
 ### (2) An example 
 > **Settings: n=100, p=3, nv=200, nsimu=100, ul=3, index_g=1.**
+
 **Run the command through MATLAB command prompt**
 ```matlab
 simu_main(100, 3, 200, 100, 3, 1);
@@ -69,6 +70,7 @@ simu_main(100, 3, 200, 100, 3, 1);
 
 ### (2) An example 
 > **Settings: n=100, p=3, nv=200, nsimu=100, ul=3, index_g=1.**
+
 **Run the R script "factor_analysis.R" using the command line:**
 ```r
 Rscript factor_analysis.R 100 3 200 100 3 1
